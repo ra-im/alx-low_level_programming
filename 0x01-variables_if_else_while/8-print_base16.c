@@ -18,7 +18,7 @@ int main(void)
 		putchar(hexadecimal_number);
 	}
 
-	for (hexadecimal_number = 'a'; hexadecimal_number <= 'f'; hexadecimal_numbber++)
+	for (hexadecimal_number = 'a'; hexadecimal_number <= 'f'; hexadecimal_number++)
 	{
 		putchar(hexadecimal_number);
 	}
