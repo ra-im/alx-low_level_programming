@@ -13,12 +13,16 @@ int main(void)
 {
 	char hexadecimal_number;
 
-	for (hexadecimal_number = '0'; hexadecimal_number <= '9'; hexadecimal_number++)
+	for (hexadecimal_number = '0';
+			hexadecimal_number <= '9';
+			hexadecimal_number++)
 	{
 		putchar(hexadecimal_number);
 	}
 
-	for (hexadecimal_number = 'a'; hexadecimal_number <= 'f'; hexadecimal_number++)
+	for (hexadecimal_number = 'a';
+			hexadecimal_number <= 'f';
+			hexadecimal_number++)
 	{
 		putchar(hexadecimal_number);
 	}
