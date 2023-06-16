@@ -20,13 +20,11 @@ int main(void)
 		if (number != 9)
 		{
 			putchar(',');
-			
 			putchar(' ');
-		} else
-		{
-			putchar('\n');
 		}
 	}
+
+	putchar('\n');
 
 	return (0);
 }
