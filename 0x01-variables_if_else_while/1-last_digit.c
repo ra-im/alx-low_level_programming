@@ -27,13 +27,13 @@ int main(void)
 
 	if (lastDigit > 5)
 	{
-		printf("and is greater than 5");
+		printf(" and is greater than 5");
 	} else if (lastDigit == 0)
 	{
-		printf("and is 0");
+		printf(" and is 0");
 	} else if (lastDigit < 6 && lastDigit != 0)
 	{
-		printf("and is less than 6 and not 0\n");
+		printf(" and is less than 6 and not 0\n");
 	}
 	return (0);
 }
