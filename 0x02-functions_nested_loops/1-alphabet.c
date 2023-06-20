@@ -13,12 +13,10 @@ void print_alphabet(void)
 {
 	char letter = 'a';
 
-	for (letter = 'a', letter <= 'z', letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
 		putchar(letter);
 	}
 
 	putchar('\n');
-
-	return void;
 }
