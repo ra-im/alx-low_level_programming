@@ -22,7 +22,6 @@ void print_alphabet_x10(void)
 		{
 			putchar(letter);
 		}
-		
 		++no_of_times;
 
 		putchar('\n');
