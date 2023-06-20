@@ -11,7 +11,7 @@
  * Return: Always void (success).
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char letter = 'a';
 	int no_of_times = 10;
