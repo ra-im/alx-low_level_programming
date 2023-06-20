@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Entry point
+ * print_alphabet_x10 - Entry point
  *
  * Description: Prints the alphabet, 10 times,
  *		in lowercase,
@@ -14,7 +14,7 @@
 void print_alphabet_x10(void)
 {
 	char letter = 'a';
-	int no_of_times = 10;
+	int no_of_times = 1;
 
 	while (no_of_times <= 10)
 	{
@@ -22,7 +22,9 @@ void print_alphabet_x10(void)
 		{
 			putchar(letter);
 		}
+		
+		++no_of_times;
 
-	putchar('\n');
+		putchar('\n');
 	}
 }
