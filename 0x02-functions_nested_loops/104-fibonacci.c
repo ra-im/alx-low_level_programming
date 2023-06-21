@@ -18,11 +18,11 @@ int main(void)
 	fib_1 = 1;
 	fib_2 = 2;
 
-	printf("%lu", fib_1);
+	printf("%d", fib_1);
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", fib_2);
+		printf(", %d", fib_2);
 		fib_2 = fib_2 + fib_1;
 		fib_1 = fib_2 - fib_1;
 	}
