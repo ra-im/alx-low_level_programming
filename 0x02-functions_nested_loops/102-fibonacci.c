@@ -31,7 +31,6 @@ int main(void)
 		first_fib_num = second_fib_num;
 		second_fib_num = next_fib_num;
 	}
-	
-	return 0;
+	return (0);
 }
-	
+
