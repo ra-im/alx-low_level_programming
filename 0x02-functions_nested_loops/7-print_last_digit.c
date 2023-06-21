@@ -19,7 +19,7 @@ int print_last_digit(int number)
 		number = -number;
 
 	last_digit = number % 10;
-	
+
 	if (last_digit < 0)
 		last_digit = -last_digit;
 
