@@ -13,6 +13,7 @@
 int main(void)
 {
 	int i;
+
 	int long sum_of_multiples_of_3;
 	int long sum_of_multiples_of_5;
 	int long total_sum;
