@@ -6,12 +6,21 @@
  *
  * @number: Number whose last digit is to be printed.
  *
- * Description: Checks for lowercase character.
+ * Description: Prints the last digit of a number.
  *
- * Return: number % 10 (success).
+ * Return: Always last-digit (success).
  */
 
 int print_last_digit(int number)
 {
-	return (number % 10);
+	int last_digit;
+
+	if (number < 0)
+		number = -number;
+
+	last_digit = number % 10;
+
+	_putchar(last_digit);
+
+	return (last_digit);
 }
