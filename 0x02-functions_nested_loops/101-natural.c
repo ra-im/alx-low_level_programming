@@ -32,7 +32,7 @@ int main(void)
 		}
 	}
 	total_sum = sum_of_multiples_of_5 + sum_of_multiples_of_3;
-	printf("%d\n", total_sum);
+	printf("%ld\n", total_sum);
 	return (0);
 }
 
