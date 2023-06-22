@@ -3,9 +3,9 @@
 /**
  * largest_number - returns the largest f 3 numbers
  *
- * @a: first integer
- * @b: second integer
- * @c: third integer
+ * @a: first number
+ * @b: second nmber
+ * @c: third number
  *
  * Retun: largest_number
  */
@@ -17,10 +17,12 @@ int largest_number(int a, int b, int c)
 	if (a >= b && a >= c)
 	{
 		largest = a;
-	} else if (b >= a && b >= c)
+	}
+	else if (b >= a && b >= c)
 	{
 		largest = b;
-	} else
+	}
+	else
 	{
 		largest = c;
 	}
