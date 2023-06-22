@@ -2,18 +2,15 @@
 #include "main.h"
 
 /**
- * print_remaining_days: Fixes the print_remaining_days()
- *			function so that the output works
- *			correctly for all dates and all
- *			leap years, printing how many days
- *			are left in the year, taking the
- *			date as arguments.
+ * print_remaining_days - takes a date and prints 
+ * how many days are left in the year,
+ * taking the leap year into account
  *
- * @month: month of the year (in number)
- * @day: day of the year (in number)
- * @year: year (in number)
+ * @month: month of theh year
+ * @day: day of the month
+ * @year: year.
  *
- * Return: Always void (success)
+ * Return: void
  */
 
 void print_remaining_days(int month, int day, int year)
