@@ -1,8 +1,14 @@
 #include "main.h"
 
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
+* main - Entry point
+*
+* Description: Tests that the function
+*		'positive_or_negative()' gives
+*		the correct output
+*		when given a case of 0.
+*
+* Return: Always 0 (success).
 */
 
 int main(void)
