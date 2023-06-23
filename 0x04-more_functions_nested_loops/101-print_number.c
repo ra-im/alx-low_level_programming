@@ -8,7 +8,7 @@
 
 void print_nmber(int n)
 {
-	int int_num;
+	unsigned int int_num;
 
 	if (int_num < 0)
 	{
@@ -21,7 +21,7 @@ void print_nmber(int n)
 
 	if (int_num / 10)
 	{
-		ptint_number(int_num / 10);
+		print_number(int_num / 10);
 	}
 
 	_putchar((int_num % 10) + '0');
