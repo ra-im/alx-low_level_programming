@@ -11,32 +11,32 @@
 
 int main(void)
 {
-	lont int number;
-	int long max_prime;
+	long int n;
+	long int max;
 	long int i;
 
-	number = 612852475143;
-	max_prime = -1;
+	n = 612852475143;
+	max = -1;
 
-	while (number % 2 == 0)
+	while (n % 2 == 0)
 	{
-		max_prime = 2;
-		number /= 2;
+		max = 2;
+		n /= 2;
 	}
 
 	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
-		while (number % i == 0)
+		while (n % i == 0)
 		{
-			max_prime = i;
-			n /= i;
+			max = i;
+			n = n / i;
 		}
 	}
 
 	if (n > 2)
-		max_prime = number;
+		max = n;
 
-	printf("%ld\n", max_prime);
+	printf("%ld\n", max);
 
 	return (0);
 }
