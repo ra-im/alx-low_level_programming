@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * print_square - Prints a square, followed by a new line.
+ * @size: Size of d square.
+ */
+
+void print_square(int size)
+{
+	/* for zero and negative sizes */
+	if (size <= 0)
+	{
+		_putchar('\n');
+	} else
+	{
+		/* for positive sizes */
+		int i, j;
+
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+}
