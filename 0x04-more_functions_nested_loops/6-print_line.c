@@ -13,7 +13,7 @@ void print_line(int n)
 	{
 		int value;
 
-		for (value = 1; value <= n; i++)
+		for (value = 1; value <= n; value++)
 		{
 			_putchar('_');
 		}
