@@ -12,7 +12,7 @@ void print_rev(char *s)
 {
 	int counter_1, counter_2, string_length;
 
-	counter_1 = -1;
+	counter_1 = 0;
 
 	/* calculate the length of the string */
 	while (s[counter_1] != '\0')
@@ -24,7 +24,7 @@ void print_rev(char *s)
 
 	/* loop over the string for the last element to the first */
 	/* using the string_length */
-	for (counter_2 = string_length;
+	for (counter_2 = string_length - 1;
 			counter_2 >= 0;
 			counter_2--)
 	{
