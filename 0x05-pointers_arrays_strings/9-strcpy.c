@@ -13,7 +13,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, counter_1, counter_2;
+	int string_length, counter_1, counter_2;
 
 	counter_1 = 0;
 
