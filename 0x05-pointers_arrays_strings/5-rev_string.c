@@ -14,6 +14,7 @@ void rev_string(char *s)
 	char tmp;
 
 	counter_1 = 0;
+	string_length = 0;
 
 	while (s[counter_1] != '\0')
 	{
@@ -23,13 +24,13 @@ void rev_string(char *s)
 	string_length = counter_1 - 1;
 
 	/*
-	for (counter_2 = string_length - 1;
-			counter_2 >= 0;
-			counter_2--)
-	{
-		_putchar(s[counter_2]);
-	}
-	*/
+	 * for (counter_2 = string_length - 1;
+	 *		counter_2 >= 0;
+	 *		counter_2--)
+	 * {
+	 *	_putchar(s[counter_2]);
+	 * }
+	 */
 
 	for (counter_2 = 0; counter_2 < string_length / 2;
 			counter_2++)
