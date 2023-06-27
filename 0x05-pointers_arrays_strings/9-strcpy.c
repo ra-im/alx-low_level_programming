@@ -13,7 +13,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, counter_1;
+	int i, counter_1, counter_2;
 
 	counter_1 = 0;
 
@@ -26,7 +26,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (counter_2 = 0; counter_2 < string_length; counter_2++)
 	{
-		dest[counter_2] = src[couner_2];
+		dest[counter_2] = src[counter_2];
 	}
 
 	dest[counter_2] = '\0';
