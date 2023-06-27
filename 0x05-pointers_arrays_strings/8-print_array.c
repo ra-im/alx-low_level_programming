@@ -14,20 +14,18 @@ void print_array(int *a, int n)
 {
 	int counter;
 
-	for (counter = 0; counter <= n; counter++)
+	for (counter = 0; counter < n; counter++)
 	{
-		if (counter == n)
+		if (counter == 0)
 		{
-			_putchar(a[counter]);
+			printf("%d", a[counter]);
 		}
-		else if (counter < n)
+		else
 		{
-			_putchar(a[counter]);
-			_putchar(';');
-			_putchar(' ');
+			printf(", %d", a[counter]);
 		}
 	}
 
-	_putchar('\n');
+	printf("\n");
 }
 
