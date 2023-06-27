@@ -32,7 +32,7 @@ void rev_string(char *s)
 	 * }
 	 */
 
-	for (counter_2 = 0; counter_2 < string_length / 2;
+	for (counter_2 = 0; counter_2 < counter_1 / 2;
 			counter_2++)
 	{
 		tmp = s[counter_2];
