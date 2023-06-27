@@ -30,7 +30,7 @@ void puts_half(char *str)
 	{
 		for (n = (counter - 1) / 2; n < counter - 1; n++)
 		{
-			_putchar(str[n+1]);
+			_putchar(str[n + 1]);
 		}
 	}
 
