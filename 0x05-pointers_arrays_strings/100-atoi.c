@@ -10,26 +10,18 @@
 
 int _atoi(char *s)
 {
-	int integer_sign = 1;
-	unsigned int integer = 0;
+	int sign = 1;
+	unsigned int num = 0;
 
-	do
-	{
-		/* condition for when *s has a neative sign */
+	do {
 		if (*s == '-')
-		{
-			integer_sign *= -1; /* sets the variable sign to negative */
-		}
-		/* condition for when the value of *s ranges from 0 to 9 */
-		else if (*s >=0 && *s <= 9)
-		{
-			integer = (integer * 10) + (*s - '0');
-		}
-		/* condition for wen the integer is strictly greater than 0 */
-		else if (integer > 0)
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
 			break;
 	} while (*s++);
 
-	return (integer * integer_sign);
+	return (num * sign);
 }
 
