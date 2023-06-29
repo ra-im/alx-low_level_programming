@@ -3,25 +3,25 @@
 /**
  * _strcat - concatenates two strings.
  *
- * dest: First string to display after concatenation.
- * src: Second string to display after concatenation.
+ * @dest: First string to display after concatenation.
+ * @src: Second string to display after concatenation.
  *
  * Return: dest (concatenated string)
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i, c;
+	int counter_1, counter_2;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	for (counter_1 = 0; dest[counter_1] != '\0'; counter_1++)
 		;
 
-	for (c = 0; src[c] != '\0'; c++)
+	for (counter_2 = 0; src[counter_2] != '\0'; counter_2++)
 	{
-		dest[i] = src[c];
-		i++;
+		dest[counter_1] = src[counter_2];
+		counter_1++;
 	}
 
-	dest[i] = '\0';
+	dest[counter_1] = '\0';
 	return (dest);
 }
