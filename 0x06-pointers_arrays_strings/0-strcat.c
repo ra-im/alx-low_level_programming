@@ -11,25 +11,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int counter_1, counter_2;
+	int i, c;
 
-	counter_1 = 0;
-	counter_2 = 0;
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-	while (dest[counter_1] != '\0')
+	for (c = 0; src[c] != '\0'; c++)
 	{
-		counter_1++;
+		dest[i] = src[c];
+		i++;
 	}
 
-	while (src[counter_2] != '\0')
-	{
-		dest[counter_1] = src[counter_2];
-		counter_1++;
-		counter_2++;
-	}
-
-	dest[counter_1] = '\0';
-
+	dest[i] = '\0';
 	return (dest);
 }
-
