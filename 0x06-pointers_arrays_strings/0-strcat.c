@@ -3,10 +3,10 @@
 /**
  * _strcat - concatenates two strings.
  *
- * dest: String in which the other strings concatenate (appends) to.
- * src: String to be concatenated (to be appended).
+ * dest: First string to display after concatenation.
+ * src: Second string to display after concatenation.
  *
- * Return: char (concatenated string)
+ * Return: dest (concatenated string)
  */
 
 char *_strcat(char *dest, char *src)
@@ -32,3 +32,4 @@ char *_strcat(char *dest, char *src)
 
 	return (dest);
 }
+
