@@ -13,6 +13,7 @@ char *cap_string(char *strn)
 {
 	int counter_1, counter_2;
 	int is_capital;
+
 	char specs[] = ",;.!?(){}\n\t\" ";
 
 	for ( counter_1 = 0, is_capital = 0;
