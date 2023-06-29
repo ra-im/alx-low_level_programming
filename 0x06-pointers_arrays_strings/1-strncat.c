@@ -10,7 +10,7 @@
  * Return: dest (concatenated string)
  */
 
-char *_strncat(char *dest, char *c, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int counter_1, counter_2;
 
