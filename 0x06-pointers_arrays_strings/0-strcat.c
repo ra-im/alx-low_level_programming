@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates two strings.
+ * _strcat - concatenates two strings.
  *
  * dest: String in which the other strings concatenate (appends) to.
  * src: String to be concatenated (to be appended).
@@ -24,7 +24,6 @@ char *_strcat(char *dest, char *src)
 	while (src[counter_2] != '\0')
 	{
 		dest[counter_1] = src[counter_2];
-
 		counter_1++;
 		counter_2++;
 	}
