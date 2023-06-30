@@ -56,3 +56,4 @@ char *cap_string(char *strn)
 	
 	return (strn);
 }
+
