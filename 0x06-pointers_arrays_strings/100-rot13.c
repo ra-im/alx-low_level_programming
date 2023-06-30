@@ -20,15 +20,16 @@ char *rot13(char *strn)
 			counter_1++)
 	{
 		for (counter_2 = 0;
-				a[counter_2] != '\0';
+				code_1[counter_2] != '\0';
 				counter_2++)
 		{
-			if (strn[counter_1] == a[counter_2])
+			if (strn[counter_1] == code_1[counter_2])
 			{
-				strn[counter_1] = b[counter_2];
+				strn[counter_1] = code_2[counter_2];
 				break;
 			}
 		}
 	}
 	return (strn);
 }
+
