@@ -8,7 +8,7 @@
  * @b: constant byte.
  * @n: number of the memory areato be filled.
  *
- * Return: s (pointer to the memoryarea.
+ * Return: s (pointer to the memoryarea).
  */
 
 char *_memset(char *s, char b, unsigned int n)
