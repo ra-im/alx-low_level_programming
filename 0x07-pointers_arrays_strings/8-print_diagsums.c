@@ -14,19 +14,37 @@
 void print_diagsums(int *a, int size)
 {
 	int counter;
-	unsigned int sum_1, sum_2;
+	unsigned int sum, square;
 
-	sum_1 = 0;
-	sum_2 = 0;
+	square = size * size;
+	sum = 0;
 
 	for (counter = 0;
-			counter < size;
+			counter < square;
 			counter++)
 	{
-		sum_1 += a[(size * i) + i];
-		sum_2 += a[(size * (i +1)) - (i + 1)];
+		if (counter % (size + 1) == 0)
+		{
+			sum += a[counter];
+		}
 	}
 
-	printf("%d, %d\n", sum_1, sum_2);
+	printf("%d, ", sum);
+
+	sum = 0;
+
+	for (counter = 0;
+			counter < square;
+			counter++)
+	{
+		if (counter % (size - 1) == 0 &&
+				counter != (square - 1) &&
+				counter != 0)
+		{
+			sum += a[counter];
+		}
+	}
+
+	printf("%d\n", sum);
 }
 
