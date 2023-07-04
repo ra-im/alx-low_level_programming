@@ -13,8 +13,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int counter;
-	unsigned int sum, square;
+	int counter, sum, square;
 
 	square = size * size;
 	sum = 0;
