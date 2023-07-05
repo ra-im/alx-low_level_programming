@@ -30,7 +30,7 @@ int is_palindrome(char *s)
  * @start: beginning of string.
  * @end: ending of string.
  *
- * Returns: 1 if string is palindrome, otherwise 0.
+ * Return: 1 if string is palindrome, otherwise 0.
  */
 
 int is_pal(char *s, int start, int end)
