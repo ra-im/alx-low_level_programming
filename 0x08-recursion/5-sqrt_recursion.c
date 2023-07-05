@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * finf_sqrt - (helper function) finfs the square root
+ * find_sqrt - (helper function) finfs the square root
  *
  * @n: number to be considered
  * @start: squar root steing point.
