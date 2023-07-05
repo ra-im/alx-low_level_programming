@@ -26,7 +26,7 @@ int wildcmp(char *s1, char *s2)
 
 		response = wildcmp(s1 + 1, s2 + 1);
 
-		return(response);
+		return (response);
 	}
 
 	if (*s2 == '*')
