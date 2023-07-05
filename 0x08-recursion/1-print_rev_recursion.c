@@ -3,7 +3,7 @@
 /**
  * _print_rev_recursion - Prints a string in reverse.
  *
- * @s; String to be consider.
+ * @s: String to be consider.
  *
  * Return: void.
  */
