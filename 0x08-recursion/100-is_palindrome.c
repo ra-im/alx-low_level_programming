@@ -13,6 +13,8 @@ int strlen_recursion(char *s);
 
 int is_palindrome(char *s)
 {
+	int response;
+
 	if (*s == 0)
 		return (0);
 
@@ -33,6 +35,8 @@ int is_palindrome(char *s)
 
 int is_pal(char *s, int start, int end)
 {
+	int result;
+
 	if (*(s + start) != *(s + end - 1))
 		return (0);
 
@@ -54,6 +58,8 @@ int is_pal(char *s, int start, int end)
 
 int strlen_recursion(char *s)
 {
+	int _strlen;
+
 	if (*s == '\0')
 		return (0);
 
