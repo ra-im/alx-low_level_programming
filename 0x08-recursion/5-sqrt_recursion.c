@@ -55,7 +55,7 @@ int find_sqrt(int n, int start, int stop)
 		}
 		else
 		{
-			return (find_sqrt(n, start, mid_point -1));
+			return (find_sqrt(n, start, mid_point - 1));
 		}
 	}
 	else
