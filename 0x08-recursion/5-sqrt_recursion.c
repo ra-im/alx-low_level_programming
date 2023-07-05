@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+int find_sqrt(int n, int start, int end);
+
 /**
  * _sqrt_recursion - Returns the natural square root of a number.
  *
@@ -41,7 +43,7 @@ int find_sqrt(int n, int start, int stop)
 
 	if (start <= stop)
 	{
-		int mid_point = (start + stop) / 2;
+		mid_point = (start + stop) / 2;
 
 		if (mid_point == n / mid_point)
 		{
