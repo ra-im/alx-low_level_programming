@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return find_sqrt(n, 1, n);
+		return (find_sqrt(n, 1, n));
 	}
 }
 
@@ -42,9 +42,9 @@ int find_sqrt(int n, int start, int stop)
 	{
 		int mid_point = (start + stop) / 2;
 
-		if (midpoint == n / mid_point)
+		if (mid_point == n / mid_point)
 		{
-			return mid_point;
+			return (mid_point);
 		}
 		else if (mid_point < n / mid_point)
 		{
@@ -60,3 +60,4 @@ int find_sqrt(int n, int start, int stop)
 		return (stop);
 	}
 }
+
