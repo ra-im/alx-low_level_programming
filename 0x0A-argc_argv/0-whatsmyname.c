@@ -9,7 +9,7 @@
  * Return: always 0 (successs)
  */
 
-int main(int argc __attribute__((__unused__)), char argv[])
+int main(int argc __attribute__((__unused__)), char *argv[])
 {
 	_putchar("%c\n", argv[0]);
 
