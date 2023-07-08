@@ -11,4 +11,5 @@
 
 - `4-add.c`: Adds positive numbers.
 
--
+- `100-change.c`: Prints the minimum nmber of coins to make change for an amount of money.
+
