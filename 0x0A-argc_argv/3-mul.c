@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, mul;
 	
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 
