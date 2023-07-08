@@ -3,7 +3,7 @@
 
 /** main - Prints its name, followed by a new line.
  *
- * @argc:: number of arguments.
+ * @argc: number of arguments.
  * @argv: array of arguments.
  *
  * Return: always 0 (successs)
