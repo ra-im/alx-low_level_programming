@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = _atoi(argv[1]);
-	b = _atoi(argv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	mul = a * b;
 
 	printf("%d\n", mul);
