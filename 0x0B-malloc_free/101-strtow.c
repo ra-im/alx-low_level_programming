@@ -17,18 +17,18 @@ int word_counter(char *strn)
 	counter = 0;
 	flag = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; strn[i] != '\0'; i++)
 	{
-		if (strn[i] == '')
+		if (strn[i] == ' ')
 			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
-			conter++;
+			counter++;
 		}
 	}
 
-	return (counter)
+	return (counter);
 }
 
 /**
@@ -43,7 +43,7 @@ int word_counter(char *strn)
 char **strtow(char *str)
 {
 	int i, j, k, length, words, start, end;
-	char **matrix, *temp
+	char **matrix, *temp;
 
 	words = word_counter(str);
 	if (words == 0)
