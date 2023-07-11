@@ -34,7 +34,7 @@ char *argstostr(int ac, char ** av)
 		i++;
 	}
 
-	conc_arg = malloc((arg_size * sizeof(char)) + 1);
+	conc_arg = malloc((arr_size * sizeof(char)) + 1);
 
 	if (conc_arg == NULL)
 		return (NULL);
