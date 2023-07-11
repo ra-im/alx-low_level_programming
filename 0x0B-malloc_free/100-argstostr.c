@@ -11,7 +11,7 @@
  * Return: poinyter to a new string; otherwise NULL (failuer).
  */
 
-char *argstostr(int ac, char ** av)
+char *argstostr(int ac, char **av)
 {
 	char *conc_arg;
 	int i, j, k, arr_size;
