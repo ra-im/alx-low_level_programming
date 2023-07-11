@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * freee_grid - frees a 2-dimensional grid previosly created
+ * free_grid - frees a 2-dimensional grid previosly created
  *		by the alloc_grid function.
  *
  * @grid: array grid.
