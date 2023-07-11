@@ -31,7 +31,7 @@ char *create_array(unsigned int size, char c)
 	while (index < size)
 	{
 		c = *(pointer + index);
-		i++;
+		index++;
 	}
 
 	*(pointer + index) = '\0';
