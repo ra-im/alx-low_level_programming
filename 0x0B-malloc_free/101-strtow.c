@@ -42,44 +42,40 @@ int word_counter(char *strn)
 
 char **strtow(char *str)
 {
-	int i, j, k, length, words, start, end;
-	char **matrix, *temp;
+	char **matrix, *tmp;
+	int i, k = 0, len = 0, words, c = 0, start, end;
 
+	while (*(str + len))
+		len++;
 	words = word_counter(str);
 	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char *) * (words + 1 ));
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
 		return (NULL);
 
-	length = 0;
-	while (*(str + length))
-		length++;
-
-	for (i = 0; i <= length; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
-			j = 0;
-			if (j)
+			if (c)
 			{
 				end = i;
-				temp = (char *) malloc(sizeof(char) * (j + 1));
-				if (temp == NULL)
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
-					*temp++ = str[start++];
-				*temp = '\0';
-				matrix[k] = temp - j;
+					*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix[k] = tmp - c;
 				k++;
-				j = 0;
+				c = 0;
 			}
 		}
-		else if (j++ == 0)
+		else if (c++ == 0)
 			start = i;
 	}
-
 	matrix[k] = NULL;
 
 	return (matrix);
