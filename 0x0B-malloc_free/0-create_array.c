@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 
 	index = 0;
 
-	while (i < size)
+	while (index < size)
 	{
 		c = *(pointer + index);
 		i++;
