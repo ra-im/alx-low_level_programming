@@ -42,11 +42,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 char *_memset(char *mem, char *str, unsigned int num)
 {
-	int i;
+	unsigned int i;
 	
 	for (i = 0; i < num; i++)
 		mem[i] = str;
 
-	return (str);
+	return (mem);
 }
 
