@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "main.h"
 
+char *_memset(char *mem, char *str, unsigned int num);
+
 /**
  * _calloc - Allocats memory for an array, using malloc.
  *
