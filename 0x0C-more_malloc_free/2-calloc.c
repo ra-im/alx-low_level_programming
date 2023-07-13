@@ -44,7 +44,7 @@ char *_memset(char *mem, char *str, unsigned int num)
 {
 	int i;
 	
-	for (i = 0; i < n; i++)
+	for (i = 0; i < num; i++)
 		mem[i] = str;
 
 	return (str);
