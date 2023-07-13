@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-char *_memset(char *mem, char *str, unsigned int num);
+char *_memset(char *mem, char str, unsigned int num);
 
 /**
  * _calloc - Allocats memory for an array, using malloc.
@@ -40,7 +40,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * Return: pointer to mem.
  */
 
-char *_memset(char *mem, char *str, unsigned int num)
+char *_memset(char *mem, char str, unsigned int num)
 {
 	unsigned int i;
 	
