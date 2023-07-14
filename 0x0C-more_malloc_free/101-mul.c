@@ -2,24 +2,24 @@
 #include <stdlib.h>
 
 /**
- * _atoi_digit - convert a char to integer.
- * @x: character to convert.
+ * _atoi_digit - convert a type char to integer.
+ * @c: character to be  converted.
  * Return: integer.
  **/
 
-int _atoi_digit(char x)
+int _atoi_digit(char c)
 {
-	unsigned int res;
+	unsigned int int_type;
 
-	if (x <= '9' && x >= '0')
-		res = x - '0';
-	return (res);
+	if (c <= '9' && c >= '0')
+		int_type = c - '0';
+	return (int_type);
 }
 
 /**
- * _isNumber - Define if a string is a number.
- * @argv: Pointer to string.
- * Return: success (0).
+ * _isNumber - Checks to see if a string is a number.
+ * @argv: Pointer to string (argument vector.
+ * Return: always 0 (success).
  **/
 int _isNumber(char *argv)
 {
@@ -32,93 +32,93 @@ int _isNumber(char *argv)
 }
 
 /**
- *_calloc - allocate array of size * nmemb.
- * @nmemb: number of elements.
- * @size: size of element.
- * Return: pointer to array.
+ *_calloc - allocate memory for an array, using malloc.
+ * @nmemb: number of array  elements.
+ * @size: size of each element.
+ * Return: pointer to allocated memory.
  **/
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *tab;
+	char *pointer;
 	unsigned int i;
 
-	tab = malloc(size * nmemb);
+	pointer = malloc(size * nmemb);
 
-	if (tab == NULL)
+	if (pointer == NULL)
 		return (NULL);
 
 	for (i = 0; i < (size * nmemb); i++)
-		tab[i] = '0';
+		pointer[i] = '0';
 
-	return (tab);
+	return (pointer);
 }
 
 /**
  * mul_array - multiply two arrays.
- * @a1: first array.
+ * @arr1: first array.
  * @len1: length of array a1.
- * @a2:  char.
- * @a3: array for result.
- * @lena: length of array a3.
+ * @arr2:  char.
+ * @arr3: array for result.
+ * @len3: length of array arr3.
  * Return: pointer to array.
  **/
 
-void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
+void *mul_array(char *arr1, int len1, char arr2, char *arr3, int len3)
 {
-	int mul = 0, i, k;
+	int mul = 0, i, len;
 
-	k = lena;
+	len = len3;
 	for (i = len1 - 1; i >= 0 ; i--)
 	{
-		mul += (a1[i] - '0') * (a2 - '0') + (a3[k] - '0');
-		a3[k] = (mul % 10) + '0';
+		mul += (arr1[i] - '0') * (arr2 - '0') + (arr3[len] - '0');
+		arr3[len] = (mul % 10) + '0';
 		mul /= 10;
-		k--;
+		len--;
 	}
 
 		while (mul != 0)
 		{
-			mul += a3[k] - '0';
-			a3[k] = (mul % 10) + '0';
+			mul += arr3[len] - '0';
+			arr3[len] = (mul % 10) + '0';
 			mul /= 10;
-			k--;
+			len--;
 		}
 
-	return (a3);
+	return (arr3);
 }
 /**
  * print_array - print all digits of array.
  * @nb: number of elements to print.
- * @a: array of elements.
+ * @arr: array of elements.
  **/
-void print_array(char *a, int nb)
+void print_array(char *arr, int nb)
 {
 	int i = 0;
 
-	while (a[i] == '0' && (i + 1) < nb)
+	while (arr[i] == '0' && (i + 1) < nb)
 	{
 		i++;
 	}
 	for (; i < nb; i++)
 	{
-		_putchar(a[i]);
+		_putchar(arr[i]);
 	}
 	_putchar('\n');
 }
 
 /**
- *main - print the multiplication of 2 numbers.
- *@argc: array length.
- *@argv: array.
+ *main - prints the multiplication of 2 numbers.
+ *@argc: array count.
+ *@argv: array vector.
  *Return: 0.
  */
 
 int main(int argc, char *argv[])
 {
-	int i, c, len1, len2, lenres;
+	int i, j, len1, len2, tot_len;
 	char E[6] = {'E', 'r', 'r', 'o', 'r', '\n'};
-	char *tabres;
+	char *tot_mul;
 
 	if (argc != 3 || _isNumber(argv[1]) == 1 || _isNumber(argv[2]) == 1)
 	{
@@ -132,20 +132,20 @@ int main(int argc, char *argv[])
 	;
 	for (len2 = 0; argv[2][len2]; len2++)
 	;
-	lenres = len1 + len2;
-	tabres = _calloc(lenres, sizeof(int));
-	if (tabres == NULL)
+	tot_len = len1 + len2;
+	tot_mul = _calloc(tot_len, sizeof(int));
+	if (tot_mul == NULL)
 	{
-		free(tabres);
+		free(tot_mul);
 		return (0);
 	}
-	for (i = len2 - 1, c = 0; i >= 0; i--)
+	for (i = len2 - 1, j = 0; i >= 0; i--)
 	{
-	tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
-	c++;
+	tot_mul = mul_array(argv[1], len1, argv[2][i], tabres, (tot_len - 1 - j));
+	j++;
 	}
-	print_array(tabres, lenres);
-	free(tabres);
+	print_array(tot_mul, tot_len);
+	free(tot_mul);
 	exit(EXIT_SUCCESS);
 	return (0);
 }
