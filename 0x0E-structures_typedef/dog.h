@@ -18,3 +18,5 @@ struct dog
 	char *owner;
 };
 
+#endif /*ends #ifndef DOG_H conditional*/
+
