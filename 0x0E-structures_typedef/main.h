@@ -1,10 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif /* ends #ifndef MAIN_H conditional */
+#endif /* ends #ifndef FILE_MAIN conditional */
 
