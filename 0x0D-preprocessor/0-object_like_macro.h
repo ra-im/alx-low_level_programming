@@ -3,5 +3,5 @@
 
 #define SIZE 1024
 
-endif /* ensd ifndef OBEJECT_LIKE_MACRO_H */
+#endif /* ends ifndef OBEJECT_LIKE_MACRO_H */
 
