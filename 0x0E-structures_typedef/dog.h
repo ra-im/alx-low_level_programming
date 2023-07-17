@@ -1,6 +1,5 @@
 #ifndef DOG_H
 #define  DOG_H
-#include "main.h"
 
 /**
  * struct dog - structure variable type with dog info.
