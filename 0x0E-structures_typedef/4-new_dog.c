@@ -2,30 +2,6 @@
 #include "dog.h"
 
 /**
- * _strcpy - cpoies string from src o dest.
- *
- * @src: source to cpoy from.
- * @dest: destination to copy to.
- *
- * Return: pointer to dest.
- */
-
-char *_strccpy(char *dest, char *src)
-{
-	int i, j;
-
-	for (i = 0; src[i] != '\0'; i++)
-		;
-
-	for (j = 0; j < i; j++)
-		dest[j] = src[i];
-
-	dest[j] = '\0';
-
-	return (dest);
-}
-
-/**
  * _strlen - determines a string's length.
  *
  * @s: string to be considered
@@ -42,6 +18,31 @@ int _strlen(char *s)
 
 	return (i);
 }
+
+/**
+ * _strcpy - cpoies string from src o dest.
+ *
+ * @src: source to cpoy from.
+ * @dest: destination to copy to.
+ *
+ * Return: pointer to dest.
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i, j;
+
+	for (i = 0; src[i] != '\0'; i++)
+		;
+
+	for (j = 0; j < i; j++)
+		dest[j] = src[i];
+
+	dest[j] = '\0';
+
+	return (dest);
+}
+
 
 /**
  * new_dog - creates a new dog.
