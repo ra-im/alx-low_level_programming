@@ -35,11 +35,9 @@ char *_strcpy(char *dest, char *src)
 	j = 0;
 
 	while (src[j] != '\0')
-	{
 		j++;
-	}
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i < j; i++)
 		dest[i] = src[i];
 
 	dest[i] = '\0';
