@@ -19,10 +19,12 @@ struct dog
 };
 
 /**
- * dog_t - typedef for struct dog
+ * dog_t - new nane for "struct dog"
  */
+/* naming the structure type using typedef*/
 typedef struct dog dog_t;
 
+/* defining the prototype functions */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
