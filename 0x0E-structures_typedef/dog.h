@@ -21,6 +21,7 @@ struct dog
 /**
  * dog_t - new nane for "struct dog"
  */
+
 /* naming the structure type using typedef */
 typedef struct dog dog_t;
 
