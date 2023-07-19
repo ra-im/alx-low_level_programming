@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	optn_arg2 = *argv[2];
 
-	if ((o == '/' || o == '%') && int_arg3 == 0)
+	if ((optn_arg2 == '/' || optn_arg2 == '%') && int_arg3 == 0)
 	{
 		printf("Error\n");
 		exit(100);
