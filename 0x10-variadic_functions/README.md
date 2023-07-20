@@ -1,11 +1,10 @@
 # Here is a brief description of every script in this directory.
 
 
-
 ## `0-sum_them_all.c`: 
 Returns the sum of all it's parameters.
-	- Prototype:`int sum_them_all(const unsigned int n, ...);`
-	- if `n == 0`, returns `0`.
+- Prototype:`int sum_them_all(const unsigned int n, ...);`
+- if `n == 0`, returns `0`.
 ```linux
 julien@ubuntu:~/0x0f. variadic functions$ cat 0-main.c
 #include <stdio.h>
@@ -36,12 +35,12 @@ julien@ubuntu:~/0x0f. variadic functions$
 
 ## `1-print_numbers.c`:
 Prints numbers followed by a new line.
-	- Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
-	- where `separator ` is the string to be printed between numbers
-	- and `n` is the number of integers passed to the function
-	- You are allowed to use `printf`
-	- if `separator` is NULL, don't print it
-	- Print a new line at the end of your function.
+- Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
+- where `separator ` is the string to be printed between numbers
+- and `n` is the number of integers passed to the function
+- You are allowed to use `printf`
+- if `separator` is NULL, don't print it
+- Print a new line at the end of your function.
 ```linux
 julien@ubuntu:~/0x0f. variadic functions$ cat 1-main.c
 #include "variadic_functions.h"
@@ -65,13 +64,13 @@ julien@ubuntu:~/0x0f. variadic functions$
 
 ## `2-print_strings.c`: 
 Prints strings, follwed by a new line.
-	- Prototype: `void print_strings(const char *separator, const unsigned int n, ...);`
-	- where `separator` is the string to be printed between the strings
-	- and `n` is the number of strings passed to the function
-	- You are allowed to use `printf`
-	- if the separator is `NULL`, don't print it
-	- If one of the string is NULL, print `(null)` instead.
-	- Print a new line at the end of your function
+- Prototype: `void print_strings(const char *separator, const unsigned int n, ...);`
+- where `separator` is the string to be printed between the strings
+- and `n` is the number of strings passed to the function
+- You are allowed to use `printf`
+- if the separator is `NULL`, don't print it
+- If one of the string is NULL, print `(null)` instead.
+- Print a new line at the end of your function
 ```linux
 julien@ubuntu:~/0x0f. Variadic functions$ cat 2-main.c
 #include "variadic_functions.h"
@@ -95,21 +94,21 @@ julien@ubuntu:~/0x0f. Variadic functions$
 
 ## `3-print_all.c`: 
 Prints anything.
-	- Prototype: void `print_all(const char * const format, ...);`
-	- where `format` is a list of types of arguments passed to the function
-		- `c: char`
-		- `i: integer`
-		- `f: float`
-		- `s: char *` (if the string is NULL, print `(nil)` instead
-		- any other char should be ignored
-		- see example
-	- You are not allowed to use `for, goto,` ternary operator, `else, do ... while`
-	- You can use a maximum of
-		- 2 `while` loops
-		- 2 `if`
-	- You can declare a maximum of `9` variables
-	- You are allowed to use `printf`
-	- Print a new line at the end of your function
+- Prototype: void `print_all(const char * const format, ...);`
+- where `format` is a list of types of arguments passed to the function
+	- `c: char`
+	- `i: integer`
+	- `f: float`
+	- `s: char *` (if the string is NULL, print `(nil)` instead
+	- any other char should be ignored
+	- see example
+- You are not allowed to use `for, goto,` ternary operator, `else, do ... while`
+- You can use a maximum of
+	- 2 `while` loops
+	- 2 `if`
+- You can declare a maximum of `9` variables
+- You are allowed to use `printf`
+- Print a new line at the end of your function
 ```linux
 julien@ubuntu:~/0x0f. Variadic functions$ cat 3-main.c
 #include "variadic_functions.h"
