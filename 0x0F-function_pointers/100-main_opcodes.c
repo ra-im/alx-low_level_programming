@@ -12,8 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	char *array;
-	int i, bytes;
+	int bytes, i;
+	char *arg_arr;
 
 	if (argc != 2)
 	{
@@ -29,19 +29,17 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	array = (char *)main;
+	arg_arr = (char *)main;
 
 	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", arr[i]);
+			printf("%02hhx\n", arg_arr[i]);
 			break;
 		}
-
-		printf("%02hhx ", arr[i]);
+		printf("%02hhx ", arg_arr[i]);
 	}
-
 	return (0);
 }
 
