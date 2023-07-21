@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 
@@ -21,7 +22,7 @@ int _atoi_digit(char c)
  * @argv: Pointer to string (argument vector.
  * Return: always 0 (success).
  **/
-int _isNumber(char *argv)
+int _isNumber(char *argv[])
 {
 	int i;
 
