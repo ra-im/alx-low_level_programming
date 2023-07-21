@@ -16,6 +16,7 @@ void print_all(const char * const format, ...)
 
 	va_start(params, format);
 
+	/* initializing the separator */
 	separator = "";
 
 	i = 0;
@@ -42,6 +43,7 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
+		/* updating the separator */
 		separator = ", ";
 		i++;
 	}
