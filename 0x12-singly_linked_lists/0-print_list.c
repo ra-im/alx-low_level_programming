@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_list: prints all d elements of a list_t list.
+ * print_list - prints all d elements of a list_t list.
  *
  * @h: pointer to th list of type list_t.
  *
