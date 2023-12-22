@@ -12,13 +12,6 @@ void print_binary(unsigned long int n)
 	int rs;
 	unsigned long int i;
 
-	/*if (n == 0)
-	{
-		printf("0");
-
-		return;
-	}*/
-
 	for (i = n, rs = 0; (i >>= 1) > 0; rs++)
 		;
 
@@ -29,6 +22,4 @@ void print_binary(unsigned long int n)
 		else
 			printf("0");
 	}
-
-	return;
 }
