@@ -10,15 +10,15 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int temp, bits;
+	unsigned long int bit;
 
-	bits = sizeof(unsigned long int) * 8;
-
-	if (index >= bits)
+	if (index >= 64)
 		return (-1);
 
-	temp = 1UL << index;
-	*n |= temp;
+	for (bit = 1; index > 0; index--, bit *= 2)
+		;
+
+	*n += bit;
 
 	return (-1);
 }
