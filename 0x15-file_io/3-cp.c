@@ -7,7 +7,7 @@ void _close(int fd);
 /**
  * _buffer - create a buffer of size 1024
  * for a file.
- * @file: file to be to be stored in buffer
+ * @fd: file to be to be stored in buffer
  * Return: buffer
  */
 char *_buffer(char *fd)
