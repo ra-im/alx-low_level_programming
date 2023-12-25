@@ -19,6 +19,7 @@ char *_buffer(char *fd)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fd);
+		exit(99);
 	}
 
 	return (buffer);
@@ -63,7 +64,7 @@ int main(int argc, char *argv[])
 
 	fd_from = open(argv[1], O_RDONLY);
 	rd = read(fd_from, buffer, 1024);
-	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	while (rd > 0)
 	{
