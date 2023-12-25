@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 char *_buffer(char *fd);
 void _close(int fd);
