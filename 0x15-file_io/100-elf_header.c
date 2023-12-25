@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 	rd = read(fd_from, buffer, 1024);
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while (rd > 0)
+	do
 	{
 		if (fd_from == -1 || rd == -1)
 		{
@@ -86,11 +86,11 @@ int main(int argc, char *argv[])
 
 		rd = read(fd_from, buffer, 1024);
 		fd_to = open(argv[2], O_WRONLY | O_APPEND);
-		}
+	} while (rd > 0);
 
-		free(buffer);
-		_close(fd_from);
-		_close(fd_to);
+	free(buffer);
+	_close(fd_from);
+	_close(fd_to);
 
-		return (0);
+	return (0);
 }
