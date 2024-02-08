@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"*.embeddedhtml": "html",
+		"*.md": "markdown",
+		"5-MAIN.C": "cpp"
+	}
+}
