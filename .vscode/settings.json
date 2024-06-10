@@ -1,7 +1,8 @@
 {
-	"files.associations": {
-		"*.embeddedhtml": "html",
-		"*.md": "markdown",
-		"5-MAIN.C": "cpp"
-	}
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.md": "markdown",
+    "5-MAIN.C": "cpp"
+  },
+  "C_Cpp.autocompleteAddParentheses": true
 }
